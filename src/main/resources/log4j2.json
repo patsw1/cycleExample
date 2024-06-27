@@ -1,0 +1,19 @@
+{
+	"Configuration": {
+		"Appenders": {
+			"Console": {
+				"PatternLayout": {
+					"pattern": "c %d{ISO8601} %l %msg%n"
+				},
+				"name" : "Console",
+				"target" : "SYSTEM_OUT"
+			}
+		},
+		"Loggers" : {
+			"Root" : {
+				"AppenderRef" : { "ref" : "Console"},
+				"level" : "info"
+			}
+		}
+	}
+}
